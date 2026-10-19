@@ -1,0 +1,51 @@
+# --- Python ---
+pycache/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Virtual environment ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Hugging Face / моделі ---
+models/
+.cache/
+*.safetensors
+*.bin
+*.onnx
+*.pt
+*.pth
+
+# --- Дані та результати ---
+data/birds.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+output/*.csv
+!output/.gitkeep
+
+# --- Тестові зразки (великі файли) ---
+samples/images/*
+samples/audio/*
+!samples/images/.gitkeep
+!samples/audio/.gitkeep
+
+# --- Середовище ---
+.env
+.env.*
+*.log
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
